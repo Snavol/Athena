@@ -1,0 +1,36 @@
+<%- include('header') %>
+
+<div class="novel-card reveal active" style="transition-delay: 0.2s;">
+                <div class="novel-card-image" style="background: linear-gradient(135deg, hsl(90, 40%, 15%), hsl(120, 30%, 10%));">
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--font-title); font-size: 1.5rem; color: var(--primary); opacity: 0.3;">
+                        T
+                    </div>
+                </div>
+                <div class="novel-card-content">
+                    <span class="novel-card-tag"><%= genre %></span>
+                    <h3><%= title%></h3>
+                    <p><%= desc %></p>
+                    <div class="novel-card-meta">
+                        <div class="novel-card-stats">
+                            <div class="stat-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                4.6
+                            </div>
+                            <div class="stat-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                650K
+                            </div>
+                        </div>
+                        <button class="bookmark-btn" onclick="event.stopPropagation(); toggleBookmark(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
